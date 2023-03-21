@@ -67,7 +67,7 @@ func student(name : String) -> (String,Int)? {
 
 print(student(name: "a") ?? (" ",0))
 
-//Functions With an Implicit Return - function implicitly return a value
+//Functions With an Implicit Return - function implicitly return a value 
 
 func wishes(msg : String) -> String{
   
@@ -239,7 +239,6 @@ print()
 //}
 // funGeneric2(data: name(name: "Shyam"))
 
-
 
 
 
