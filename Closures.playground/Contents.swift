@@ -142,4 +142,45 @@ func student2(name :  String ,  c : @escaping () -> ()) -> String{
 }
 student2(name: "xyz",c : studentClosure)
 
+
+//23M
+
+//typealias with closure
+
+typealias MyClosure = (Int, Int) -> Int // it is a closure that have 2 para and Int return
+
+//create function
+func addition(str : String , closure : MyClosure){
+    print(str)
+    let total =   closure(10,20)
+    print(total)
+}
+
+//call the function and pass closure
+addition(str: "Addition of",closure: { (x : Int, y : Int) -> Int in
+   return x + y
+})
+
 //
+
+
+let bags = { () -> Int in
+    var aVal : Int = 0
+    aVal+=1
+    return aVal
+    
+}
+
+
+
+bags() //1
+bags() //2
+bags() //3
+
+
+
+
+
+
+
+
